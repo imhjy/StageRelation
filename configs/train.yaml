@@ -1,0 +1,21 @@
+# Full three-modality StageRelation; adapted from C00_full.yaml.
+data: data/GLEAM/split
+device: cuda
+seed: 244936556
+num_workers: 0
+num_threads: 4
+image_size: 224
+feature_dim: 512
+backbone: resnet50
+pretrained_encoder: true
+freeze_encoder: false
+grid_size: 7
+token_layers: 2
+token_heads: 8
+epochs: 80
+batch_size: 32
+learning_rate: 1.0e-5
+new_module_learning_rate: 1.0e-4
+weight_decay: 1.0e-4
+noise_probability: 0.25
+noise_std: 0.25

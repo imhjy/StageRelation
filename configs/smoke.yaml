@@ -1,0 +1,21 @@
+# Synthetic pipeline check only. Not a paper experiment.
+data: data/demo
+device: cpu
+seed: 42
+num_workers: 0
+num_threads: 2
+image_size: 32
+feature_dim: 32
+backbone: tiny
+pretrained_encoder: false
+freeze_encoder: false
+grid_size: 2
+token_layers: 1
+token_heads: 4
+epochs: 2
+batch_size: 4
+learning_rate: 1.0e-4
+new_module_learning_rate: 1.0e-3
+weight_decay: 1.0e-4
+noise_probability: 0.25
+noise_std: 0.25
